@@ -20,3 +20,19 @@
 .tools-instance{
     display: inline-flex;
 }
+
+menu_button{
+    margin-top: 5%;
+    max-width: 60px;
+    max-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(105, 51, 153, 0.8);
+    color: black;
+    font-weight: normal;
+    font-family: Alef;
+}
