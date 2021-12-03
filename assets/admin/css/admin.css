@@ -1,0 +1,23 @@
+#wpcontent{
+    padding: 0;
+}
+#container{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+}
+
+#admin-sidebar-tools{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    min-width: 250px;
+    max-width: 300px;
+    background: blue;
+}
+
+.tools-instance{
+    display: inline-flex;
+}
