@@ -9,4 +9,8 @@
  */
 require_once 'engine.php';
 $engine = new engine();
+<<<<<<< HEAD
 $engine->index();
+=======
+$engine->index();
+>>>>>>> 15daeb2 (add obfuscation)
