@@ -5,11 +5,10 @@ window.Core = class Core
     ajax = (params) => {
         return new Promise((resolve, reject)=>{
             const xhr = new XMLHttpRequest();
-
-            xhr.open(params.method, params.url);
+            xhr.open(params.method, params.url, true);
 
             xhr.responseType = params.responseType;
-            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
             xhr.onload = () => {
                 if(xhr.status >= 400){

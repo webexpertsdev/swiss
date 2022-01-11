@@ -2,28 +2,25 @@
     padding: 0;
 }
 #container{
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    position: relative;
+    flex-basis: auto;
 }
 
 #admin-sidebar-tools{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
     min-width: 250px;
     max-width: 300px;
+    height: 100vh;
+    background-color: rgba(10,67,122, 0.5);
+    display: flex;
+    flex-direction: column;
 }
 
 .tools-instance{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
 }
 
 menu_button{
     margin-top: 5%;
-    max-width: 60px;
     max-height: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -35,4 +32,104 @@ menu_button{
     color: black;
     font-weight: normal;
     font-family: Alef;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#admin-sidebar-tools menu_button{
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-left: 3px solid black;
+    border-radius: 0;
+    background: none;
+    margin-left: 5px;
+    text-transform: uppercase;
+    justify-items: start;
+}
+
+#admin-sidebar-tools menu_button:hover{
+    background: rgba(52, 45, 113, 0.7);
+}
+
+#wrapper_woo{
+    display: flex;
+}
+
+#navmen{
+    display: flex;
+    padding: 20px;
+    justify-content: left;
+}
+
+#navmen menu_button{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#content-box{
+    padding: 20px;
+}
+
+#popup_general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-element-wrapper{
+    margin: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px -2px rgb(0 0 0 / 30%);
+}
+
+.settings-row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#popup_general button{
+    background: aquamarine;
+    padding: 15px 0px;
+}
+
+#success{
+    width: 10em;
+    height: 5em;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    padding: 10px 15px;
+    background: aquamarine;
+    left: 90%;
+    top: 80%;
+}
+
+#fail{
+    width: 10em;
+    height: 5em;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    padding: 10px 15px;
+    background: red;
+    left: 90%;
+    top: 80%;
 }
