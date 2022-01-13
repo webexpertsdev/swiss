@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bac253d-9a8c-4239-b4d5-a126a657548d" name="Changes" comment="add obfuscation">
-      <change afterPath="$PROJECT_DIR$/license_data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/license_managment.php" afterDir="false" />
+    <list default="true" id="9bac253d-9a8c-4239-b4d5-a126a657548d" name="Changes" comment="change function to create license and check license table,create preloading and create page with license managment">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4577ca3e-90ef-4cce-bc7e-aeba16a71bfd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4577ca3e-90ef-4cce-bc7e-aeba16a71bfd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/admin/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/admin/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin/js/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/pages/license.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/pages/license.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woonectio.php" beforeDir="false" afterPath="$PROJECT_DIR$/woonectio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/license_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/license_managment.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641877035467</updated>
       <workItem from="1641877038565" duration="2663000" />
-      <workItem from="1642071389749" duration="15564000" />
+      <workItem from="1642071389749" duration="18051000" />
     </task>
     <task id="LOCAL-00001" summary="add obfuscation">
       <created>1641879473731</created>
@@ -66,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641879473731</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change function to create license and check license table,create preloading and create page with license managment">
+      <created>1642087035074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642087035074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add obfuscation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add obfuscation" />
+    <MESSAGE value="change function to create license and check license table,create preloading and create page with license managment" />
+    <option name="LAST_COMMIT_MESSAGE" value="change function to create license and check license table,create preloading and create page with license managment" />
   </component>
 </project>

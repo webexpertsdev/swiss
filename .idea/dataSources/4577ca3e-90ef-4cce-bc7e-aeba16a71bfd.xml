@@ -1548,9 +1548,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <table id="397" parent="9" name="wp_woomotiv_stats">
       <Collation>utf8mb4_unicode_520_ci</Collation>
     </table>
-    <table id="398" parent="9" name="wp_woonectio_license">
-      <Collation>utf8mb4_unicode_520_ci</Collation>
-    </table>
+    <table id="398" parent="9" name="wp_woonectio_license"/>
     <column id="399" parent="297" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
@@ -7000,17 +6998,11 @@ location_code</ColNames>
     </key>
     <column id="1482" parent="398" name="id">
       <Position>1</Position>
-      <DataType>int unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
+      <DataType>int|0s</DataType>
     </column>
     <column id="1483" parent="398" name="key">
       <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(70)|0s</DataType>
     </column>
-    <index id="1484" parent="398" name="id">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-    </index>
   </database-model>
 </dataSource>

@@ -18,16 +18,20 @@ switch ($data_array['action']){
                     $query = $wpdb->prepare('SHOW TABLES LIKE %s', $wpdb->esc_like($table_name));
                     $charset_collate = $wpdb->get_charset_collate();
                     if ($wpdb->get_var($query) !== $table_name){
-                        $sql = 'CREATE TABLE woonectio_popup_settings(
-                                id INT,
-                                key VARCHAR(70));';
-                        require_once(ABSPATH.'wp-admin/includes/upgrade.php' );
+                        $table_name = $wpdb->prefix . 'woonectio_license';
+                        $sql = 'CREATE TABLE IF NOT EXISTS '.$table_name.'(
+                                `id` INT,
+                                `key` VARCHAR(70));';
+                        if(!function_exists('dbDelta')) {
+                            require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+                        }
                         dbDelta($sql);
-
-                        $wpdb->insert($table_name, [
-                            'id' => 1,
-                            'key' => $data_array['key']
-                        ]);
+                        if($wpdb->get_var('SELECT `key` FROM '.$table_name.' WHERE `id` = 1') === null){
+                            $wpdb->insert($table_name, [
+                                'id' => 1,
+                                'key' => $data_array['key']
+                            ]);
+                        }
                         echo json_encode([
                             'success' => true]);
                     }
