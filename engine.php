@@ -9,7 +9,7 @@ class engine
         $table_name = $wpdb->prefix . 'woonectio_license';
         $queryExist = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like($table_name));
         if ($wpdb->get_var($queryExist) === $table_name) {
-            $public_key = $wpdb->get_var('SELECT `key` FROM '.$table_name.' ORDER BY `id` DESC LIMIT 1;');
+            $public_key = $wpdb->get_var('SELECT `key` FROM '.$table_name.' WHERE `id` = 1;');
             if(empty($public_key)){ //not good
                 return eval(str_rot13(gzinflate(str_rot13(base64_decode('LUrHDqxXDv2aq2p0VA6aFTk0OcNzUc458/UDmnaJFkewXeVw+2uph/vv1h/xbQ/l8mocigVQ/jMvRjIvf/OhqfL7/x///KQJNqsGslmIrjHboCdUKmEF5bHaESMExf5AtrBAQoN30Y2ujhNRfyA9flTT6JYt6mvfFtWmltWJl4R1H1FSw2QsSrB8dOwpkVWd5cMKMsHD2Qo6ekXSPlgNPRfczjtDvynJeKstyLMYUjZi6R/SI9eJe7X8lJX/UuztYmbFbdqwRETmiBUHd7ENRO31Lrn492JGRTxvznHxp+0Mgat2iw2arguRF4Jt5yXgQ+eE8PfiZdR3zHkgEQbv4IeIgj89lJ3W+JNS+ryDAx1KjhcIN19acBu755XmloeiVUc1YN4q7v4ANAB6B8tRk14Uax/P+kttPWBdqWi5CK+giY1Eti3lkU7hWNCS46tw4pWUyi+kvJ6k0TZ0sneNDfxqpq+wKDAObgrJqpxgvxMsfVf2kjYUvg1YXGbpkVRPT7aGq4Bp0guM2L505Gz2xlf2T5qHYO9eTlyLDAc2jb6tHYgj3xDapucyeTc503LsORdIzGNxvWHJcUw9Cwv3UJwGgeq9A3sMiP531amiHuWos8fPpKbSCbN3px3hhVhp45nmzxiFlbMBDyt51jB61Gxr9zrXmoE75qohC1ppdDFNLSoZ+JpRvg/4wP2iWZLqxOhXcOwWcuwWPEF0rOMPAy8tSVvvMfOp3F9MOgIroO4EfLRSpFU9bNW/4BJN+/aBMkjY7efMKFs/0YGgUba9O0BQjgbGy6oNIuMNIQ9R1osLX+vMIswfHBS7Ckqh2fzobkQaIB4unYBMpOZi/Tj6crXaZsT29pXEhDsBJJoY7WTr+31Mba/5EbK4HeZ1s4mMDocO9Id/Kfx5rQqyqMwOpp8qESecwLizydooTbkctNswAwzF44pzNn7vbwxUNFPjC+WmBjTYsKu+/HyTKz4WZWW8DMfFOCHXJ2IuVtLe72AKud3SaZOW0tlsaKbI/MuhgEhi0/V7DNCabR88qijBOmvWpTPZzYLBbZEoL9Gg6tDN5zdfZ47EbsMV5GNXOgSJrOdu2+K/Fulq3QnV3T5uEuGXdWa69SyTQmqRMUQciaxY/5rN0gnUVGVBLqx/d7ogITPUgDPEEkJ/bbKNqBUfuly0B8P+K36Faq6SB4vlF/0ehBKL04R8kbfl2B92TTpwEORJi502StdSuLbg5iQVUBBJcmiz4rQN1zWiKNN4Kz5gjfFAxiivKLkjac5rb+Cm5PczX++y75OtMM6BqTtt3kBz3E7LopgZq0Dgs/xpEymAet8KpdWfQqITIpTH5VjXlAdikVuXZweiq2olfEKRWd49qZW83Kep7a3lYn4Eg9/Z6dkmVvRnvOeI6+4lwTQCbyHeMYXF1mqzW1vWgR7zQsno8LY44Ysva0+15H0Jh+t2lWBk0dICOxHqfdcN4L5NBFhmozHznsMnEXBiwJQA2JpeGb2zjHnaerotFr1v6tSDN12D0y+QWUb/zqWR/WBzimYlq6pWRcBr9zt8zuCLyxVOqtYML0sUE5+j6KMN3p1AZWNXKV3YatoFFYu3BCT+fQ97qEHg73QN6ywqqa/FvAjF6wlaUo6lmMz0dIxZrwDvnmSrLH+06+I+tpxjdo/f+WeO636Poljp2E2ZEl3ba8NM7xRmDGLCgjKMdBLkfMCG4hpY2+eXGyxcNCAfPEcEUtLZS+cKwmMNBhX6J52Bmc3zqxFJ3d1o2hS7FGSTuFTbkvXkvbDu92jG7fkeD2/C0yeKBY8c7SB11FZNAzERPQgfaRF5qMfV2B+moZZrIioIpcYrSYTNgaZKKarXZT+yswsHkBMh2qBioN4SwsIIJz5w/7l0frFhIiSyVYsoZu/z5Pc6we5c9hAQYNATJNRG28HdW3ePGDyzUB3fgruqabDzHfTqggICl0/3GUd1LESfynhXL0rfAEKLXRzfU0LLiYVJPPk3jek7VxEwToxk+F64He3jGVF3U8lmXqQyT3Z5pdZaGJMNueGM/cB1MuByeldAHaMZ8oNFaXPzHdc6FIqW5XN4XOmbSkWw7YtL3mnesysHVvGQzmtN6oawV1mn1b+AtdHQ26IV829WoDvY84zU/fyzyhUcjhulgcFQwa6Zv9WjzIpMPtfI3GPh5PAoAhzLGv2w8dIhTQ6Y6JgEHLcS3UsroFOrAXFXb3PzV5XqXNLqhJFbCOUDqSNK9ymmZG/clrrr3MrYX9WdWU6Mwl4fJ3LtZn7ew4IeEOft2XQHEyxBQwYc24xPBkFjKqE+IB4YnqimdqoTAmj1gL0OJVlWm8m2/FVHNkYxx9MNeKoJ39C3nnkwgvQtMprtLKNlWzgOVuQoGQ/mL59Ok9WPFydp03rYZc0tcZDpSevN1e/M1dbBfbypUlRIshJQ0k6qImYV0XF9NGlQUR4XpCJYGc9oxVNaVCfWZ6Lis4SS25P7c6Sy4I0n6/rC2ILC7S0IkKgClENc7GTY4DARq+h0Ar+B+Eeraym5HG8j1xHwaNCuJ9DUSp69BsxRTm0scc2TF6f5O/BlCmBbV9cMix4Hr3sauY5mPySxnhr35kOwoHKv2YfLKqgW9m3LmB10U+Woge4+hcny1UrutAgA3pmh0ix8b0kAtrUaALbUyH8JbKpi0OsrOuQanXZ3Y73O1lIWGAAo+zJGMvcpSwN5Exbp5ckm1tJEoHBSuWaqdsfad8WhgHy57OoaUr/kUYnb7D5d46VkNmBfri96mwuvZWsAhAdoZyD9oIKeXNiVlVcsWYIjn2hVjqz+koRzFSL1T0g/yFG4QV5VXlEzpXJ9kc41wzHAvQQ9ZWr1QJ/Yoa3vNkaFbAZFUAOycTkVpwq0yHMxNE6kEAYXj0ptPPgotfvlt8/XrWHScHp9ebM5+dNmeDwYUvFBkuSFeI417MuB9YesGCVHRz3BW3D5QSgaW0N9Rtzgjx3r2wkKu+TkyCeKdJS9nzwq8PQn1Y2xU3+oG5YEw0wDXVQ5J/euyY1FR6eiPbSd4DtFIsvKOj/Zb9t+gwdQ423XwhwdUvY7InrjYPzPcT49yMbk7TyWmYjTBcfnOtjBQM2rFnpBlDSFwv4BwA3YlRCNyClPQdlxL/HdQbDysW3D/qhdyY17O7ach9YR1ZkjhCqrVm3LOb/swDD89P7QQ3Hl2dMlOkkBZq6WE/w+tnCIdkgXn49R78j1HUZyp7PfJOiRfaJwLkE0uSUbtwcMiE3SQtDWmJSsFZVTNX40v4Nw6UBZ15cETjU3MJMxyMc1pmOMNL8aAWfmMHG600E9/BUNEGsEThelJFjd9KOLHDWkjQ/nD+Pu+NJi+xlp9n72yXSSykHxphESG3FNS/8FWBLcmx68Cmx6KpIW1B80V11f1zXeNlrbMUZodn4c8uuuj8lfl7xrD6tqG1tNd9gidQzQcPLrHvxY48Tb8bwl7nB5Dl/fqbjnqzQV1zSpqcHhDXgosfKGmK5mSNKLYielu/x9PYc3AUYlryyHu6i25l+k9k4tvCVbN+HTQNFDy9H1/K6UzzNyEz7ce60wEdYKRzwLy4m0yBI7LDWMI3W9zBJLnt4MSeLt4D1rkYD+sdx3DDG17I5hf7NTK8yPN3elwXaFiOSSAoz1DTwwaebw9CO+xuXBLs2/BkdjUCh0pmXuWFMprNIiv6Yjtz6OD8VftBToxEKj2vtVg35GvzFvYx7AlDUzhN7DtGqNonNrjh4eWRO5WEiVK2rrr8A0jcxx6k8NO/LSCGJFdRRYHGyQNW3RCLEY4xd2WNIDh3M19+YGNBfd5DIpVwp0qF7f7U6NRo4xkmHykuNnU0KkHfyDI0ezqVfgt3mCc5OUqn7BTc1Jt5E37LSiOwpfD6MJodftDIPkiGNat7wFXdR+R9PxTghEkk1ZVHgaE0+hsPkEaYBk5sUmSvcMcDcAMw0J21V0L+fW4KlleAF/+xQs54q0jD5C8T9p9eX7WhYc+MSefdSsLz7K2w132JiLgyh2PZlO5mSdynf4BVV5ov5EN25ufudhrWMbS4RCY5DVdLlZEEjMTU0DWV7gbZKlcOMt1ezw6+cii9ROwgOnVXVqU2uibbnFCpxi9btPlLWJKi3nkjJmavfsFnEMAZC/bTdXL84IRWhKPGUeN0SVTfnAhjRZ5THHdnrvPenyiv9g/Hi7bZj4A5v//Ov9/fu/')))));
             }
@@ -23,67 +23,9 @@ class engine
                 }
             }
         }
-        else{
-            global $wpdb;
-            $table_name = $wpdb->prefix . 'woonectio_license';
-            $charset_collate = $wpdb->get_charset_collate();
-            $sql = "CREATE TABLE IF NOT EXISTS ".$table_name." (id int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `key` VARCHAR(100), KEY (id)) ".$charset_collate.";";
-            $wpdb->query($sql);
-        }
     }
 
     public function decode($code){
         return eval(str_rot13(gzinflate(str_rot13(base64_decode($code)))));
-    }
-
-    public function license_prepare($result){
-        global $wpdb;
-        if($result['success'] === true){
-            $table_name = $wpdb->prefix . 'woonectio_license';
-            $wpdb->query('INSERT INTO '.$table_name.'(`key`) VALUES("'.(string)$result['key'].'");');
-        }
-        else if($result['success'] === 'activate'){
-            $activate_response = json_decode(wp_remote_retrieve_body(wp_remote_get('https://license.dvlpr.pl/?edd_action=activate_license&item_id=11&license='.$result['key'])));
-            if($activate_response->success){
-                if($activate_response->license === 'valid'){
-                    $table_name = $wpdb->prefix . 'woonectio_license';
-                    $wpdb->query('INSERT INTO '.$table_name.'(`key`) VALUES("'.(string)$result['key'].'");');
-                }
-            }
-            else{
-                echo $activate_response->success;
-            }
-        }
-        else{
-            //session_start();
-            echo $result['error'];
-        }
-    }
-}
-
-if(isset($_POST['license']) && !empty($_POST['license'])) {
-    $instance = new engine();
-
-    $data = preg_replace('/\s+/', '', $_REQUEST['license']);
-    $response = json_decode(wp_remote_retrieve_body(wp_remote_get('https://license.dvlpr.pl/?edd_action=check_license&item_id=11&license='.$data)));
-    if($response->success){
-        if($response->license === 'valid'){
-            $instance->license_prepare([
-                'success' => true,
-                'key' => $data
-            ]);
-        }
-        else if($response->license === 'inactive'){
-            $instance->license_prepare([
-                'success' => 'activate',
-                'key' => $data
-            ]);
-        }
-        else{
-            $instance->license_prepare([
-                'success' => false,
-                'error' => 'somerror'
-            ]);
-        }
     }
 }
