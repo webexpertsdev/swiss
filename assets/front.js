@@ -30,7 +30,7 @@ function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-function popup_main(){
+let popup = () =>{
     let params = {
         method: 'POST',
         url: window.location.protocol + "//" + window.location.host + '/wp-content/plugins/woonectio/templates/popup_main.php',
@@ -44,7 +44,6 @@ function popup_main(){
         let count_retry = 0;
         function show(){
             setTimeout(async ()=>{
-                console.log('ok');
                 let params_modal = {
                     method: 'POST',
                     url: window.location.protocol + "//" + window.location.host + '/wp-content/plugins/woonectio/templates/popup_main.php',
@@ -56,8 +55,6 @@ function popup_main(){
                 }
 
                 core.ajax(params_modal).then(data=>{
-                    console.log(data);
-
                     let notify = '<div class="woonectio_popup">\n' +
                         '    <div class="popup_image">'+data.item_image+
                     '<div class="star">&#9733;</div>\n' +
@@ -87,5 +84,17 @@ function popup_main(){
 }
 
 window.onload = () =>{
-    popup_main();
+    let parametrs = {
+        method: 'POST',
+        url: window.location.protocol + "//" + window.location.host + '/wp-content/plugins/woonectio/plugins_managment.php',
+        body: {
+            action: 'get_active_plugins'
+        },
+        responseType: 'json'
+    }
+    core.ajax(parametrs).then(data=>{
+        if(data[0] === 'popup'){
+            popup();
+        }
+    });
 }

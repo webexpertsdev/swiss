@@ -204,5 +204,6 @@ if(document.getElementById('register_id') === null){
     window.onload = () => {
         ajax_load();
         auto_form_loader();
+        form_submit();
     }
 }
