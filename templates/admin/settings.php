@@ -19,6 +19,14 @@
                             <label>Enable</label>
                         </div>
                     </div>
+
+                    <div class="form-element-wrapper">
+                        <h2>SideCard</h2>
+                        <div>
+                            <input type="checkbox" class="woonectio_plugins_enable-sidecard">
+                            <label>Enable</label>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit">Save changes</button>
             </form>

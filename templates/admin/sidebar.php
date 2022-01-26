@@ -3,5 +3,6 @@
     <div class="tools-instance">
         <menu_button id="settings">Settings</menu_button>
         <menu_button id="popup">Pop-up</menu_button>
+        <menu_button id="sidecard">Side card</menu_button>
     </div>
 </div>

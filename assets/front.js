@@ -114,6 +114,28 @@ let popup = () =>{
     })
 }
 
+function sidecard(){
+    let form = document.getElementById('sideform');
+    form.addEventListener('submit', event=>{
+        event.preventDefault();
+        let params = {
+            method: 'POST',
+            url: window.location.protocol + "//" + window.location.host + '/wp-content/plugins/woonectio/sidecard.php',
+            body: {
+                id: document.getElementById('cardid').value,
+                count: document.getElementById('points').value
+            },
+            responseType: 'json'
+        }
+
+        core.ajax(params).then(data=>{
+            location.reload();
+        }).catch(data=>{
+            console.log('error front.js 131');
+        });
+    })
+}
+
 window.onload = () =>{
     let parametrs = {
         method: 'POST',
@@ -124,8 +146,19 @@ window.onload = () =>{
         responseType: 'json'
     }
     core.ajax(parametrs).then(data=>{
-        if(data[0] === 'popup'){
-            popup();
-        }
+        data.forEach(plugin=>{
+            switch(plugin){
+                case 'popup':
+                    popup();
+                    break;
+                case 'sidecard':
+                    sidecard();
+                    break;
+                default:
+                    if(document.getElementById('sidecard_apnel') !== null){
+                        document.getElementById('sidecard_apnel').remove();
+                    }
+            }
+        })
     });
 }
