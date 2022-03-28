@@ -4,11 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bac253d-9a8c-4239-b4d5-a126a657548d" name="Changes" comment="change function to create license and check license table,create preloading and create page with license managment">
+    <list default="true" id="9bac253d-9a8c-4239-b4d5-a126a657548d" name="Changes" comment="create functionns for popup and create alfa sidecard">
+      <change afterPath="$PROJECT_DIR$/addons/add_class_depends_stock_of_product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_custom_agree_fields.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_custom_buy_now.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_custom_classes_to_product_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_custom_fields_into_order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_custom_shipping_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_dynamic_change_priceline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_inputs_for_qty_change.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_price_into_button.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/add_taxonomy_to_mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ajax_update_totals.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/delete_media_after_product_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/enable_shipping_shortcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax_atc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/admin/css/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_conf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minicart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify_autoclose.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify_other.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify_restrictiveloading.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/extras.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_body.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_coupons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_shortcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_style.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_suggested.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pages/shipping.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uninstall.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woo_tools.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woo_tools_main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4577ca3e-90ef-4cce-bc7e-aeba16a71bfd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4577ca3e-90ef-4cce-bc7e-aeba16a71bfd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/front.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/front.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form_submitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/form_submitter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/license_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/license_data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/license_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/license_managment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sidecard.php" beforeDir="false" afterPath="$PROJECT_DIR$/sidecard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/pages/popup_content_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/pages/popup_content_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/pages/popup_styles.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/pages/popup_styles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/popup.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/popup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/popup_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/popup_main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woonectio.php" beforeDir="false" afterPath="$PROJECT_DIR$/woonectio.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +75,14 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -25,6 +90,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="23XOaqxjt9Pmdc1x3hnEAoshshp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -34,9 +107,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -53,6 +129,27 @@
       <updated>1641877035467</updated>
       <workItem from="1641877038565" duration="2663000" />
       <workItem from="1642071389749" duration="18051000" />
+      <workItem from="1642498316656" duration="20792000" />
+      <workItem from="1643356917400" duration="15017000" />
+      <workItem from="1643686290286" duration="184537000" />
+      <workItem from="1645129071035" duration="106458000" />
+      <workItem from="1645661807936" duration="1556000" />
+      <workItem from="1646091036327" duration="9951000" />
+      <workItem from="1646118921034" duration="605000" />
+      <workItem from="1646148912531" duration="13000" />
+      <workItem from="1647042468259" duration="951000" />
+      <workItem from="1647072448127" duration="4846000" />
+      <workItem from="1647217705040" duration="15163000" />
+      <workItem from="1647431229805" duration="26140000" />
+      <workItem from="1647608073653" duration="650000" />
+      <workItem from="1647610119838" duration="161000" />
+      <workItem from="1647751932452" duration="8094000" />
+      <workItem from="1647851282799" duration="15471000" />
+      <workItem from="1647880333575" duration="11862000" />
+      <workItem from="1648033568599" duration="12871000" />
+      <workItem from="1648076951920" duration="3706000" />
+      <workItem from="1648112465917" duration="15511000" />
+      <workItem from="1648223737368" duration="3368000" />
     </task>
     <task id="LOCAL-00001" summary="add obfuscation">
       <created>1641879473731</created>
@@ -68,7 +165,28 @@
       <option name="project" value="LOCAL" />
       <updated>1642087035074</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create system for mangament plugins">
+      <created>1642133881546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642133881546</updated>
+    </task>
+    <task id="LOCAL-00004" summary="some change before normal implementation">
+      <created>1642504541049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642504541049</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create functionns for popup and create alfa sidecard">
+      <created>1643193199992</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643193199992</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +207,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add obfuscation" />
     <MESSAGE value="change function to create license and check license table,create preloading and create page with license managment" />
-    <option name="LAST_COMMIT_MESSAGE" value="change function to create license and check license table,create preloading and create page with license managment" />
+    <MESSAGE value="create system for mangament plugins" />
+    <MESSAGE value="some change before normal implementation" />
+    <MESSAGE value="create functionns for popup and create alfa sidecard" />
+    <option name="LAST_COMMIT_MESSAGE" value="create functionns for popup and create alfa sidecard" />
   </component>
 </project>

@@ -5,7 +5,7 @@
         <div id="info" style="padding: 15px; margin: 10px; color: white; display: none"></div>
         <form id="register_id" style="display: flex; flex-wrap: wrap; flex-direction: column">
             <input type="text" placeholder="your license code here" name="license" id="key" style="margin-bottom: 10px">
-            <button type="submit">Activate!</button>
+            <button type="submit">Activate</button>
         </form>
     </div>
 
@@ -51,7 +51,7 @@
                 method: 'POST',
                 url: window.location.protocol + "//" + window.location.host + '/wp-content/plugins/woonectio/license_managment.php',
                 body: {
-                    action: 'check',
+                    action: 'check_code',
                     key: document.getElementById('key').value
                 },
                 responseType: 'json'

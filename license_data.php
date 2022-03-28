@@ -5,7 +5,7 @@ global $wpdb;
 
 $data_array = json_decode(array_search('', $_POST), true);
 if (true) {
-    $license = $wpdb->get_var("SELECT `key` FROM " . $wpdb->prefix . "woonectio_license WHERE id=1;");
+    $license = $wpdb->get_var("SELECT `key` FROM woonectio_license WHERE id=0;");
     if(!empty($license)){
         $activate_response = json_decode(wp_remote_retrieve_body(wp_remote_get('https://license.dvlpr.pl/?edd_action=activate_license&item_id=11&license='.$license)));
         if($activate_response->success){

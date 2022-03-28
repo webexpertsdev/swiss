@@ -60,7 +60,15 @@ if(document.getElementById('register_id') === null){
                                 values[one.className] = one.checked;
                                 break;
                             case 'select-one':
-                                values[one.className] = one.options[one.selectedIndex].text;
+                                if(one.value.indexOf('____') > 0){
+                                    values[one.className] = one.value.replace('____', '');
+                                }
+                                else{
+                                    values[one.className] = one.value;
+                                }
+                                break;
+                            case 'url':
+                                values[one.className] = one.value.replaceAll('?', '@@@').replaceAll('=', '<<<').replaceAll('&', '>>>');
                                 break;
                             default:
                                 values[one.className] = one.value;
@@ -125,8 +133,21 @@ if(document.getElementById('register_id') === null){
                                         }
                                     }
                                     break;
+                                case 'textarea':
+                                    let inp = data[key]
+                                    if(inp === null){
+                                        inp = '';
+                                    }
+                                    inp = inp.replaceAll('_', ' ')
+                                    document.getElementsByClassName(f_id+"-"+key)[0].value = inp;
+                                    break;
                                 default:
-                                    document.getElementsByClassName(f_id+"-"+key)[0].value = data[key];
+                                    let inp2 = data[key]
+                                    if(inp2 === null){
+                                        inp2 = '';
+                                    }
+                                    inp2 = inp2.replaceAll('_', ' ');
+                                    document.getElementsByClassName(f_id+"-"+key)[0].value = inp2;
                                     break;
                             }
                         });
@@ -154,9 +175,9 @@ if(document.getElementById('register_id') === null){
                     document.getElementById('loader-wrapper').style.display = 'none';
                     let data_div = '<br>\n' +
                         '            <div class="license_manager">\n' +
-                        '                <p>Product name: <b>'+data["product_name"]+'</b></p>\n' +
+                        '                <p>Plan name: <b>'+data["product_name"]+'</b></p>\n' +
                         '                <p>License status: <b>'+data["license_status"]+'</b></p>\n' +
-                        '                <p>Expire date: <b>'+data["expire_date"]+'</b></p>\n' +
+                        '                <p>Expire date: <b>'+data["expire_date"].split(' ')[0]+'</b></p>\n' +
                         '                <p>Owner name: <b>'+data["customer_name"]+'</b></p>\n' +
                         '                <p>Owner email: <b>'+data["customer_email"]+'</b></p>\n' +
                         '                <p>License limit: <b>'+data["license_limit"]+'</b></p>\n' +
@@ -176,7 +197,7 @@ if(document.getElementById('register_id') === null){
                             method: 'POST',
                             url: window.location.protocol + "//" + window.location.host + '/wp-content/plugins/woonectio/license_managment.php',
                             body: {
-                                action: 'change'
+                                action: 'clear_license'
                             },
                             responseType: 'json'
                         };
@@ -201,9 +222,42 @@ if(document.getElementById('register_id') === null){
         }
     }
 
+    function salesNotify_styleForm(){
+        let handler_change = () =>{
+            jQuery('.woonectio_popup').css('font-size', jQuery('.woonectio_popup_settings-font_size_desktop').val()+'px');
+            jQuery('.woonectio_popup').css('background-color', jQuery('.woonectio_popup_settings-background_color').val());
+            jQuery('.woonectio_popup').css('color', jQuery('.woonectio_popup_settings-text_color').val());
+
+            switch(jQuery('.woonectio_popup_settings-position').val()){
+                case 'right':
+                    jQuery('.woonectio_popup').css('top', '70%');
+                    jQuery('.woonectio_popup').css('left', '95%');
+                    jQuery('.woonectio_popup').css('transform', 'translate(-95%, 70%)');
+                    break;
+                case 'left':
+                    jQuery('.woonectio_popup').css('top', '70%');
+                    jQuery('.woonectio_popup').css('left', '5%');
+                    jQuery('.woonectio_popup').css('transform', 'translate(-5%, 70%)');
+                    break;
+            }
+        }
+        jQuery('body').on('click', '#popup_styles', ()=>{
+            setTimeout(()=>{
+                handler_change();
+                jQuery('input').on('change', ()=>{
+                    handler_change();
+                });
+                jQuery('select').on('change', ()=>{
+                    handler_change();
+                });
+            },100)
+        })
+    }
+
     window.onload = () => {
         ajax_load();
         auto_form_loader();
         form_submit();
+        salesNotify_styleForm();
     }
 }

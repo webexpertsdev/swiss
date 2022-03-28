@@ -130,4 +130,9 @@
             </form>
         </div>
     </div>
+    <div class="woonectio_popup">
+        <div id="woonectio_popup_product_wrapper">
+            <div class="popup_image"><img width="324" height="324" src="http://wordpress/wp-content/uploads/2022/01/320ace7efb8a4e59825f61ae88b9919b-324x324.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" srcset="http://wordpress/wp-content/uploads/2022/01/320ace7efb8a4e59825f61ae88b9919b-324x324.jpg 324w, http://wordpress/wp-content/uploads/2022/01/320ace7efb8a4e59825f61ae88b9919b-150x150.jpg 150w, http://wordpress/wp-content/uploads/2022/01/320ace7efb8a4e59825f61ae88b9919b-100x100.jpg 100w, http://wordpress/wp-content/uploads/2022/01/320ace7efb8a4e59825f61ae88b9919b-128x128.jpg 128w, http://wordpress/wp-content/uploads/2022/01/320ace7efb8a4e59825f61ae88b9919b-256x256.jpg 256w" sizes="(max-width: 324px) 100vw, 324px"></div>nice t-shirt</div>
+        <div id="woonectio_wrapper_for_popup"><br><span id="woonectio_buyer">Alex997</span><br><span id="woonectio_buyer_username">Alex997 </span><span id="woonectio_buyer_firstname">Alex </span><span id="woonectio_buyer_lastname">Tolkien </span><br><span id="woonectio_date">2022-01-08</span><br><span id="woonectio_bywoonectio">by woonectio</span></div></div>
 </div>
+

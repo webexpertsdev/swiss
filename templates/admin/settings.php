@@ -3,6 +3,7 @@
     <div id="container">
         <div id="navmen">
             <menu_button id="license">License</menu_button>
+            <menu_button id="ajax">Ajax</menu_button>
         </div>
 
         <div id="content-box">
@@ -21,9 +22,25 @@
                     </div>
 
                     <div class="form-element-wrapper">
-                        <h2>SideCard</h2>
+                        <h2>Sticky add to card</h2>
                         <div>
                             <input type="checkbox" class="woonectio_plugins_enable-sidecard">
+                            <label>Enable</label>
+                        </div>
+                    </div>
+
+                    <div class="form-element-wrapper">
+                        <h2>Woo-Ajax notifications</h2>
+                        <div>
+                            <input type="checkbox" class="woonectio_plugins_enable-wooajax">
+                            <label>Enable</label>
+                        </div>
+                    </div>
+
+                    <div class="form-element-wrapper">
+                        <h2>Mini card</h2>
+                        <div>
+                            <input type="checkbox" class="woonectio_plugins_enable-minicard">
                             <label>Enable</label>
                         </div>
                     </div>
