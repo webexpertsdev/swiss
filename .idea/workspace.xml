@@ -4,68 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bac253d-9a8c-4239-b4d5-a126a657548d" name="Changes" comment="create functionns for popup and create alfa sidecard">
-      <change afterPath="$PROJECT_DIR$/addons/add_class_depends_stock_of_product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_custom_agree_fields.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_custom_buy_now.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_custom_classes_to_product_page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_custom_fields_into_order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_custom_shipping_info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_dynamic_change_priceline.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_inputs_for_qty_change.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_price_into_button.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/add_taxonomy_to_mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ajax_update_totals.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/delete_media_after_product_delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/enable_shipping_shortcode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax_atc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/admin/css/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_conf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minicart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify_autoclose.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify_other.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/ajaxnotify_restrictiveloading.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/extras.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_body.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_coupons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_shortcode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_suggested.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/minicard_text.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/pages/shipping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uninstall.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/woo_tools.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/woo_tools_main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4577ca3e-90ef-4cce-bc7e-aeba16a71bfd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4577ca3e-90ef-4cce-bc7e-aeba16a71bfd.xml" afterDir="false" />
+    <list default="true" id="9bac253d-9a8c-4239-b4d5-a126a657548d" name="Changes" comment="actual data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/admin/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/admin/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/admin/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/front.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/front.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form_submitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/form_submitter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/license_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/license_data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/license_managment.php" beforeDir="false" afterPath="$PROJECT_DIR$/license_managment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sidecard.php" beforeDir="false" afterPath="$PROJECT_DIR$/sidecard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/pages/popup_content_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/pages/popup_content_template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/pages/popup_styles.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/pages/popup_styles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/popup.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/popup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/popup_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/popup_main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woonectio.php" beforeDir="false" afterPath="$PROJECT_DIR$/woonectio.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +90,7 @@
       <workItem from="1648033568599" duration="12871000" />
       <workItem from="1648076951920" duration="3706000" />
       <workItem from="1648112465917" duration="15511000" />
-      <workItem from="1648223737368" duration="3368000" />
+      <workItem from="1648223737368" duration="4501000" />
     </task>
     <task id="LOCAL-00001" summary="add obfuscation">
       <created>1641879473731</created>
@@ -186,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643193199992</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="actual data">
+      <created>1648478290202</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648478290202</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +158,7 @@
     <MESSAGE value="create system for mangament plugins" />
     <MESSAGE value="some change before normal implementation" />
     <MESSAGE value="create functionns for popup and create alfa sidecard" />
-    <option name="LAST_COMMIT_MESSAGE" value="create functionns for popup and create alfa sidecard" />
+    <MESSAGE value="actual data" />
+    <option name="LAST_COMMIT_MESSAGE" value="actual data" />
   </component>
 </project>
